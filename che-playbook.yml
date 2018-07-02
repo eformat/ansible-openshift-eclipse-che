@@ -1,0 +1,9 @@
+---
+- name: Example Playbook
+  hosts: localhost
+  tasks:
+  - import_role:
+      name: openshift_che
+    vars:
+      project_name: "ide"
+      che_version: "latest"

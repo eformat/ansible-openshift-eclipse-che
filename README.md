@@ -27,16 +27,9 @@ Role Variables
 |`openshift_cli`              | `oc`               | Optional | OpenShift CLI command and arguments (e.g. auth) | 
 
 
-Example Playbook
-------------
+Run Me
+------
 
-```
-name: Example Playbook
-hosts: localhost
-tasks:
-- import_role:
-    name: siamaksade.openshift_che
-  vars:
-    project_name: "ide"
-    che_version: "latest"
+```bash
+ansible-playbook -i inventory ocp-nexus-configure.yml
 ```
